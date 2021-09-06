@@ -1,0 +1,22 @@
+inu=[101,102,103,104]
+inn=["Milk","Cheese","Ghee","Bread"]
+p=[42,50,500,40]
+s=[10,20,15,16]
+item=input("Enter the item number: ")
+q=int(input())
+exist= int(item) in inu
+ii=0
+
+if exist:
+    if s[ii] > q:
+        ii = inu.index(int(item))
+        price = p[ii] * q
+        rs= s[ii]-q
+        print(price,"INR")
+        print(rs,"LEFT")
+
+    else:
+        print("NO STOCK")
+
+else:
+    print("INVALID INPUT")
